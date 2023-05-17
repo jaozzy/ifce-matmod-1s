@@ -1,0 +1,4 @@
+executar somente o "DataSage_v2_SES.py"
+
+ou adaptar o "DataSage_v1_TD.py" para rodar os
+outros scripts .py
