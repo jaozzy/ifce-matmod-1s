@@ -64,9 +64,9 @@ def ct():
     else:
         os.system('clear')
 
-#p = int(input('número de iterações (x*12):     '))
+p = int(input('número de iterações (x*12):     '))
 
-for f in range(0, 1):
+for f in range(0, p+1):
     
     for i in range(1, 13):
         results = []
@@ -674,8 +674,8 @@ for f in range(0, 1):
                 for nome_arquivo in os.listdir(diretorio_atual):
                     caminho_arquivo = os.path.join(diretorio_atual, nome_arquivo)
                     if os.path.isfile(caminho_arquivo) and nome_arquivo.endswith(".txt"):
-                        shutil.move(caminho_arquivo, pasta_txt)
-                        #os.remove(caminho_arquivo)
+                        #shutil.move(caminho_arquivo, pasta_txt)
+                        os.remove(caminho_arquivo)
 
     # A função xlsx_files cria uma pasta chamada "planilhas" no diretório atual 
     # (se ela ainda não existir), # e move todos os arquivos Excel com 
@@ -687,8 +687,8 @@ for f in range(0, 1):
 
         def xlsx_files():
             diretorio_atual = os.getcwd()
-            #pasta_planilhas = os.path.join(diretorio_atual, "ia_data")
-            pasta_planilhas = os.path.join(diretorio_atual, "planilhas")
+            pasta_planilhas = os.path.join(diretorio_atual, "ia_data")
+            #pasta_planilhas = os.path.join(diretorio_atual, "planilhas")
             if not os.path.exists(pasta_planilhas):
                 os.mkdir(pasta_planilhas)
 

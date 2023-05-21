@@ -3,7 +3,7 @@ import pandas as pd
 
 planilhas = []
 Db = os.getcwd()
-d = os.path.join(Db, "planilhas")
+d = os.path.join(Db, "ia_data")
 
 for i, arquivo in enumerate(os.listdir(d), start=1):
     if arquivo.endswith('.xlsx'):
